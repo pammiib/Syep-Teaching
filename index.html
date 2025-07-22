@@ -3,70 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Pammi's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero">
-    <img src="https://via.placeholder.com/180" alt="Profile Picture">
-    <h2>Hi, I’m <span class="accent">Your Name</span></h2>
-    <p>I’m a high school student learning web development!</p>
+  <!-- Navbar (Bootstrap) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Flexbox + Centered) -->
+  <section id="home" class="hero container d-flex flex-lg-row flex-column align-items-center justify-content-center">
+    <img src="#" alt="Profile Picture" class="hero-img">
+    <div class="hero-text">
+      <h1>Hi, I am <span class="accent">Your Full Name</span></h1>
+      <p>I'm a high school student learning web development!</p>
+      <a href="#contact" class="btn btn-primary mt-3">Contact Me</a>
+    </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="section">
+  <!-- About Section -->
+  <section id="about" class="section container">
     <h2>About Me</h2>
-    <p>I’m passionate about web development. I love creating websites and learning new technologies.</p>
+    <p>5-6 Sentences about yourself</p>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
+  <!-- Skills Section (Bootstrap Columns) -->
+  <section id="skills" class="section container">
     <h2>My Skills</h2>
-    <div class="grid">
-      <div>HTML</div>
-      <div>CSS</div>
-      <div>JavaScript</div>
-      <div>Python</div>
+    <div class="row g-3">
+      <div class="col"><div class="bg-success text-white rounded-pill py-2">HTML</div></div>
+      <div class="col"><div class="bg-success text-white rounded-pill py-2">CSS</div></div>
+      <div class="col"><div class="bg-success text-white rounded-pill py-2">JavaScript</div></div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div>
-        <h3>Project 1</h3>
-        <p>Brief description of your project.</p>
-      </div>
-      <div>
-        <h3>Project 2</h3>
-        <p>Brief description of your project.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email me at <a href="mailto:you@example.com">you@example.com</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 Your Name</p>
-  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
