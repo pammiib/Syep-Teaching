@@ -44,3 +44,8 @@ body {
     flex-direction: column;
   }
 }
+
+#greeting {
+  font-weight: bold;
+  margin-top: 20px;
+}
