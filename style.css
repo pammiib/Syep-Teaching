@@ -1,41 +1,78 @@
+
+/* 🔹 BASIC RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 🔹 BODY STYLING */
 body {
-  background-color: blanchedalmond;
+  background: linear-gradient(to bottom, #f6c5bb, #ffb19f); /* Updated: added soft gradient */
   color: #333;
   text-align: center;
   line-height: 3;
+  font-family: 'Poppins', sans-serif;
+  font-size: large;
 }
 
+/* 🔹 SECTION SPACING */
 .section {
-  padding: 40px 20px;
+  padding: 60px 20px; /* Increased spacing for cleaner layout */
+  max-width: 900px;
+  margin: auto; /* Center content horizontally */
 }
 
+/* 🔹 HERO SECTION */
 .hero {
   padding: 50px 20px;
   gap: 20px;
 }
 
+/* 🔹 HERO IMAGE STYLING */
 .hero-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 40%;
+  object-fit: cover;
   background: lightgray;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* NEW: soft shadow */
 }
 
+/* 🔹 HERO TEXT */
 .hero h1 {
   font-size: 60px;
 }
 
+/* 🔹 TYPING TEXT COLOR */
 .accent {
-  color: darkblue;
+  color: rgb(139, 19, 0);
 }
 
-/* Media Query */
+/* 🔹 SECTION TITLES */
+h2 {
+  font-size: 36px; /* New: consistent heading size */
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* 🔹 SKILLS BUTTONS (from Bootstrap but enhanced) */
+.bg-success {
+  transition: transform 0.3s ease; /* NEW: hover animation */
+}
+
+.bg-success:hover {
+  transform: scale(1.05); /* NEW: grow on hover */
+  background-color: #549c99 !important; /* Darker green */
+}
+
+/* 🔹 GREETING TEXT */
+#greeting {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* 🔹 RESPONSIVE STYLES */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 40px;
@@ -45,7 +82,9 @@ body {
   }
 }
 
-#greeting {
-  font-weight: bold;
-  margin-top: 20px;
+.section h2 {
+  border-bottom: 2px solid #b33a3a; /* or your accent color */
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 20px;
 }
