@@ -18,7 +18,7 @@ const reviews = [
     name: 'peter jones',
     job: 'intern',
     img: 'https://www.course-api.com/images/people/person-4.jpeg',
-    text: 'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto asperiores debitis incidunt, eius earum ipsam cupiditate libero? Iste, doloremque nihil?',
   },
 ];
 // select items
