@@ -132,7 +132,8 @@ p {
 
 /* section */
 .section {
-  padding: 5rem 0;
+  padding-top: 2rem; /* reduce top padding */
+  padding-bottom: 5rem;
 }
 
 .section-center {
@@ -174,7 +175,8 @@ main {
 }
 .container {
   width: 100vw;
-  max-width: var(--fixed-width);
+  max-width: 900px; /* larger max-width */
+  margin: 0 auto;
 }
 .review {
   background: var(--clr-white);
